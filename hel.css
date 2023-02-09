@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
+
+html,body{
+    height: 100%;
+    margin: 0;
+    background-color: beige;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#app{
+    max-width: 400px;
+    width: calc(40% - 80px);
+    height: calc(60% - 80px);
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(51, 11, 11, 0.1);
+    padding: 40px;
+}
+#app header, #day-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#app header{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 221, 25);
+    color: orangered;
+    height: 70px;
+    overflow-wrap: calc(40% - 80px);
+}
+#month{
+    display: flex;
+    flex-flow:column-wrap;
+}
+#month *{
+    margin: 5px;
+    padding: 5px;
+}
+ #day{
+    font-size: 3em;
+    font-weight: bold;
+    padding-right: 5px;
+ }
+ #week{
+    font-weight: bold;
+ }
+#app section{
+    overflow: auto;
+    height: calc(100% - 80px);
+}
+#app section article{
+    padding:2px ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+ 
+input[type=checkbox]{
+    display: none;
+}
+label{
+    display: block;
+    border:2px solid rgb(138, 124, 124);
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    cursor: pointer;
+    cursor: hand;
+    font-size: large;
+}
+input[type=checkbox]{
+	display:none;
+}
+
+article span{
+	padding: 5px;
+}
+
+article span:focus{
+	outline: 1px solid #0b4431;
+}
+input[type=checkbox]:checked + label{
+	border: 2px solid #ec5d1b;
+	background-color: #e4d595;
+}
+
+input[type=checkbox]:checked ~ span{
+	color: #ec5d1b;
+	text-decoration: line-through;
+    opacity: 70%;
+}
+
+section footer{
+	display: flex;
+	justify-content: center;
+}
+
+section footer button{
+	font-weight: bold;
+	border: none;
+	background-color: #e39236;
+	padding: 5px;
+	font-size: 4em;
+	color: rgb(255, 246, 209);
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	cursor: hand;
+	margin-top: 14px;
+	outline: 2px;
+	user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
